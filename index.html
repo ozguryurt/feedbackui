@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback UI</title>
+
+        <!-- Bootstrap, Popper, jQuery -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.3.js"
+            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b3978793c0.js"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap, Popper, jQuery -->
+
+        <!-- style.css -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- style.css -->
+    </head>
+    <body>
+        <div class="container p-5 d-flex justify-content-center">
+            <div id="feedback-container" class="container-fluid border border-1 rounded p-3 d-flex flex-column grid gap-3
+                justify-content-center align-items-center text-center w-50">
+                <div class="feedback-header">
+                    <h3 class="fw-bolder fs-3">Lütfen memnuniyet durumunuzu bizimle paylaşın:</h3>
+                </div>
+                <div class="feedback-icons d-flex flex-row grid gap-3">
+                    <div id="kotu" role="button" class="d-flex flex-column" style="font-size: 5rem;">
+                        <span class="fw-semibold" style="font-size: 7rem;">😿</span>
+                        <span class="fs-3 fw-semibold">Kötü</span>
+                    </div>
+                    <div id="orta" role="button" class="d-flex flex-column" style="font-size: 5rem;">
+                        <span class="fw-semibold" style="font-size: 7rem;">🙀</span>
+                        <span class="fs-3 fw-semibold">Orta</span>
+                    </div>
+                    <div id="iyi" role="button" class="d-flex flex-column" style="font-size: 5rem;">
+                        <span class="fw-semibold" style="font-size: 7rem;">😻</span>
+                        <span class="fs-3 fw-semibold">İyi</span>
+                    </div>
+                </div>
+                <div class="feedback-footer">
+                    <button id="degerlendirBtn" class="btn btn-primary rounded-pill p-3 fw-bolder">DEĞERLENDİR</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
