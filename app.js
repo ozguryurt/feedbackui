@@ -22,7 +22,7 @@ $(document).ready(function () {
             <div class="feedbackres-body"><h3 class="fw-normal fs-5">Geri bildiriminizi kendimizi geliştirmek için kullanacağız.</h3></div>
             `);
         } else {
-            alert(false);
+            alert("Lütfen bir değerlendirme seçin.");
         }
     });
 });
